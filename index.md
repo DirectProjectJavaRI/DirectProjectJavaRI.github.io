@@ -28,7 +28,7 @@ The reference implementation adopts a modular design for easy asset reuse and ex
 * Security And Trust Agent
 * Gateway
 * Message Monitoring
-* Policy Enablement
+* [Policy Enablement](https://directprojectjavari.github.io/direct-policy/)
 * DNS Services
 * BareMetal Assembly Project
 * BareMetal GUI Based Installer
