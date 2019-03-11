@@ -20,6 +20,8 @@ If you want to jump right in with both feet and stand up an instance of the refe
 
 If you want to understand the details of the reference implementation componenst and they how fit together, refer to the list of modules in the section below.
 
+If you would like build all components including the BareMetal assembly from source code vs using a prebuilt BareMetal assembly, use the instuctions [here](https://github.com/DirectProjectJavaRI/direct-ri-build)
+
 ## Modular Components
 The reference implementation adopts a modular design for easy asset reuse and extensibility. Components are available in both .Net and Java.
 
