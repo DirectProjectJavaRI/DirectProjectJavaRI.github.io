@@ -24,7 +24,7 @@ If you want to understand the details of the reference implementation componenst
 The reference implementation adopts a modular design for easy asset reuse and extensibility. Components are available in both .Net and Java.
 
 ### Java Components
-* Commons Library
+* [Commons Library](http://api.directproject.info/direct-common/6.0/)
 * Security And Trust Agent
 * Gateway
 * Message Monitoring
