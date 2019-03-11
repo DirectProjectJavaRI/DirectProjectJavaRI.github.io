@@ -6,7 +6,7 @@ title: The DirectProject
   <img src="/assets/logo.png">
 </p>
 
-## Direct Project Java Reference Implementation
+## Overview
 The reference implementation is an open source and pre-assembled implementation of the Direct specifications. An implementation exists in both the .Net and Java languages and can be downloaded freely from a handful of websites. A subproject of Direct, called Bare Metal, contains a set of instructions on procuring the reference implementation and standing up a reference HISP from scratch using only the reference implementation assemblies.
 
 The reference implementation is a fully working model with all sorts of bells and whistles, but it's just a model. If you’ve ever delved into the world of embedded hardware or robotics, the starting point is usually a reference board. The board is a cookie cutter model with several modules, inputs, outputs, and maybe an operating system or programmable circuits. However, the reference board is not intended to be the final design that ultimately goes into your finished solution. It is tweaked and extended with custom modules, or some modules may be removed. The end product is a customized board that meets the specific needs of your solution.
