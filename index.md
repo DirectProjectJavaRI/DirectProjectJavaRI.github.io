@@ -29,7 +29,7 @@ The reference implementation adopts a modular design for easy asset reuse and ex
 * [Commons Library](http://api.directproject.info/direct-common/6.0/)
 * Security And Trust Agent
 * Gateway
-* Message Monitoring
+* [Message Monitoring](https://directprojectjavari.github.io/direct-msg-monitor/)
 * [Policy Enablement](https://directprojectjavari.github.io/direct-policy/)
 * DNS Services
 * BareMetal Assembly Project
