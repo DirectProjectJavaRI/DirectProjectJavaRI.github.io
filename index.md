@@ -28,7 +28,7 @@ The reference implementation adopts a modular design for easy asset reuse and ex
 ### Java Components
 * [Commons Library](http://api.directproject.info/direct-common/6.0/)
 * [Security And Trust Agent](https://directprojectjavari.github.io/agent/)
-* Gateway
+* [Gateway](https://directprojectjavari.github.io/gateway/)
 * [Message Monitoring](https://directprojectjavari.github.io/direct-msg-monitor/)
 * [Policy Enablement](https://directprojectjavari.github.io/direct-policy/)
 * [DNS Services](https://directprojectjavari.github.io/dns/)
