@@ -32,5 +32,4 @@ The reference implementation adopts a modular design for easy asset reuse and ex
 * [Message Monitoring](https://directprojectjavari.github.io/direct-msg-monitor/)
 * [Policy Enablement](https://directprojectjavari.github.io/direct-policy/)
 * [DNS Services](https://directprojectjavari.github.io/dns/)
-* BareMetal Assembly Project
-* BareMetal GUI Based Installer
+* [BareMetal Assembly Project](https://directprojectjavari.github.io/direct-project-stock/)
