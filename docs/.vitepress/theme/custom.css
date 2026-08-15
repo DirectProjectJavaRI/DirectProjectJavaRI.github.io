@@ -1,0 +1,193 @@
+/**
+ * Palette carried over from the site's previous jekyll-theme-cayman header
+ * gradient (#159957 teal -> #155799 blue) so the migrated site keeps a
+ * familiar look and feel.
+ */
+:root {
+  --vp-font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial,
+    sans-serif;
+
+  --vp-c-brand-1: #155799;
+  --vp-c-brand-2: #124a82;
+  --vp-c-brand-3: #1e5faa;
+  --vp-c-brand-soft: rgba(21, 87, 153, 0.14);
+
+  --doc-accent-teal: #159957;
+  --doc-callout-bg: #f2faf6;
+
+  /* VitePress defaults the sidebar to --vp-c-bg-alt (a slightly different shade
+     than the main content's --vp-c-bg), which reads as a visible seam between
+     the nav pane and the page. Match it to the content background instead. */
+  --vp-sidebar-bg-color: var(--vp-c-bg);
+}
+
+.dark {
+  --vp-c-brand-1: #5b9bd5;
+  --vp-c-brand-2: #4a87bd;
+  --vp-c-brand-3: #cfe3f7;
+  --vp-c-brand-soft: rgba(91, 155, 213, 0.16);
+
+  --doc-callout-bg: rgba(21, 153, 87, 0.08);
+}
+
+/* h2 underline accent, matching the original site's teal/green gradient rule */
+.vp-doc h2 {
+  border-bottom: 2px solid var(--doc-accent-teal);
+  padding-bottom: 8px;
+}
+
+.vp-doc h3 {
+  color: var(--vp-c-brand-3);
+}
+
+.vp-doc li strong {
+  color: var(--vp-c-brand-3);
+}
+
+/* :::tip container for callouts */
+.vp-doc .custom-block.tip {
+  border-color: var(--doc-accent-teal);
+  background-color: var(--doc-callout-bg);
+}
+
+.vp-doc .custom-block.tip .custom-block-title {
+  color: var(--vp-c-brand-3);
+}
+
+/* figure/figcaption styling for documentation screenshots */
+.vp-doc figure {
+  margin: 18px 0 24px;
+}
+
+.vp-doc figure img,
+.vp-doc p > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* italic caption paragraph directly beneath a standalone image */
+.vp-doc p:has(> img:only-child) + p:has(> em:only-child) {
+  margin-top: -8px;
+  font-size: 13px;
+  color: var(--vp-c-text-2);
+  text-align: center;
+  font-style: normal;
+}
+
+/* table header matches the site's solid brand-blue header row */
+.vp-doc table th {
+  background-color: var(--vp-c-brand-1);
+  color: #ffffff;
+}
+
+/* Drop the divider line VitePress puts above the Previous/Next page footer */
+.VPDocFooter .prev-next {
+  border-top: none;
+}
+
+/* Home page hero: index.md is a plain doc page (not VitePress's special
+   layout: home) so the sidebar shows there like every other page. This is a
+   hand-built lookalike of VitePress's VPHero component, styled with the same
+   button/brand CSS variables the theme already defines. */
+.home-hero {
+  text-align: center;
+  padding: 32px 0 40px;
+}
+
+.home-hero-logo {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 320px;
+  width: auto;
+  height: auto;
+  border-radius: 8px;
+}
+
+.home-hero-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  border: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+}
+
+.home-hero-name {
+  color: var(--vp-c-brand-1);
+  font-size: clamp(28px, 5vw, 40px);
+  font-weight: 700;
+}
+
+.home-hero-text {
+  color: var(--vp-c-text-1);
+  font-size: clamp(28px, 5vw, 40px);
+  font-weight: 700;
+}
+
+.home-hero-tagline {
+  margin: 12px 0 0;
+  color: var(--vp-c-text-2);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.home-hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.home-hero-btn {
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  padding: 0 20px;
+  line-height: 38px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.25s, border-color 0.25s, background-color 0.25s;
+}
+
+.home-hero-btn.brand {
+  border-color: var(--vp-button-brand-border);
+  color: var(--vp-button-brand-text);
+  background-color: var(--vp-button-brand-bg);
+}
+
+.home-hero-btn.brand:hover {
+  border-color: var(--vp-button-brand-hover-border);
+  color: var(--vp-button-brand-hover-text);
+  background-color: var(--vp-button-brand-hover-bg);
+}
+
+.home-hero-btn.alt {
+  border-color: var(--vp-button-alt-border);
+  color: var(--vp-button-alt-text);
+  background-color: var(--vp-button-alt-bg);
+}
+
+.home-hero-btn.alt:hover {
+  border-color: var(--vp-button-alt-hover-border);
+  color: var(--vp-button-alt-hover-text);
+  background-color: var(--vp-button-alt-hover-bg);
+}
+
+/* The nav logo lockup is wider than VitePress's default square-icon sizing
+   assumes, plus it carries its own blue backdrop rather than a transparent
+   background, so it already reads fine on both light and dark chrome. */
+:root {
+  --vp-nav-logo-height: 28px;
+}
+
+.VPNavBarTitle .logo {
+  border-radius: 4px;
+}

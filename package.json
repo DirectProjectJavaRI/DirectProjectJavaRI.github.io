@@ -1,0 +1,27 @@
+{
+  "name": "directprojectjavari-github-io",
+  "version": "1.0.0",
+  "description": "GitHub Pages repository for the DirectProject Java Reference Implementation",
+  "scripts": {
+    "predocs:dev": "node scripts/fetch-docs.mjs",
+    "docs:dev": "vitepress dev docs",
+    "predocs:build": "node scripts/fetch-docs.mjs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DirectProjectJavaRI/DirectProjectJavaRI.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/DirectProjectJavaRI/DirectProjectJavaRI.github.io/issues"
+  },
+  "homepage": "https://directprojectjavari.github.io/",
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  }
+}
