@@ -28,8 +28,8 @@ The reference implementation adopts a modular design for easy asset reuse and ex
 
 * [Commons Library](http://api.directproject.info/direct-common/6.0/)
 * [Security And Trust Agent](/agent/)
-* [Gateway](https://directprojectjavari.github.io/gateway/)
-* [Message Monitoring](https://directprojectjavari.github.io/direct-msg-monitor/)
-* [Policy Enablement](https://directprojectjavari.github.io/direct-policy/)
-* [DNS Services](https://directprojectjavari.github.io/dns/)
-* [BareMetal Assembly Project](https://directprojectjavari.github.io/direct-project-stock/)
+* [Gateway](/gateway/)
+* [Message Monitoring](/direct-msg-monitor/)
+* [Policy Enablement](/direct-policy/)
+* [DNS Services](/dns/)
+* [BareMetal Assembly Project](/direct-project-stock/)

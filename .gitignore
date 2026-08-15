@@ -7,8 +7,14 @@ docs/.vitepress/dist/
 docs/.vitepress/cache/
 
 # Component docs fetched at build/dev time (scripts/fetch-docs.mjs) — the
-# source of truth lives in each component repo's own docs/ folder, not here
+# source of truth lives in each component repo's own docs/ folder, not here.
+# Keep this list in sync with the slugs in scripts/components.json.
 docs/agent/
+docs/gateway/
+docs/direct-msg-monitor/
+docs/direct-policy/
+docs/dns/
+docs/direct-project-stock/
 
 # Local override for scripts/fetch-docs.mjs during development, so a
 # not-yet-pushed component repo can be pointed at a local filesystem path

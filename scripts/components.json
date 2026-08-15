@@ -3,5 +3,30 @@
     "slug": "agent",
     "repo": "https://github.com/DirectProjectJavaRI/agent.git",
     "branch": "gh-pages"
+  },
+  {
+    "slug": "gateway",
+    "repo": "https://github.com/DirectProjectJavaRI/gateway.git",
+    "branch": "gh-pages"
+  },
+  {
+    "slug": "direct-msg-monitor",
+    "repo": "https://github.com/DirectProjectJavaRI/direct-msg-monitor.git",
+    "branch": "gh-pages"
+  },
+  {
+    "slug": "direct-policy",
+    "repo": "https://github.com/DirectProjectJavaRI/direct-policy.git",
+    "branch": "gh-pages"
+  },
+  {
+    "slug": "dns",
+    "repo": "https://github.com/DirectProjectJavaRI/dns.git",
+    "branch": "gh-pages"
+  },
+  {
+    "slug": "direct-project-stock",
+    "repo": "https://github.com/DirectProjectJavaRI/direct-project-stock.git",
+    "branch": "gh-pages"
   }
 ]
