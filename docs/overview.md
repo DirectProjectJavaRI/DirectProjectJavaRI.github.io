@@ -27,9 +27,9 @@ The reference implementation adopts a modular design for easy asset reuse and ex
 ### Java Components
 
 * [Commons Library](http://api.directproject.info/direct-common/6.0/)
-* [Security And Trust Agent](/agent/)
-* [Gateway](/gateway/)
-* [Message Monitoring](/direct-msg-monitor/)
-* [Policy Enablement](/direct-policy/)
-* [DNS Services](/dns/)
-* [BareMetal Assembly Project](/direct-project-stock/)
+* [Security And Trust Agent](/docs/agent/)
+* [Gateway](/docs/gateway/)
+* [Message Monitoring](/docs/direct-msg-monitor/)
+* [Policy Enablement](/docs/direct-policy/)
+* [DNS Services](/docs/dns/)
+* [BareMetal Assembly Project](/docs/direct-project-stock/)

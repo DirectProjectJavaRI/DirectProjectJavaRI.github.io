@@ -11,6 +11,6 @@ title: The DirectProject
   <p class="home-hero-tagline">Open source reference implementation of the Direct specifications</p>
   <div class="home-hero-actions">
     <a class="home-hero-btn brand" href="/overview">Overview</a>
-    <a class="home-hero-btn alt" href="/agent/">Security And Trust Agent</a>
+    <a class="home-hero-btn alt" href="/docs/agent/">Security And Trust Agent</a>
   </div>
 </div>
