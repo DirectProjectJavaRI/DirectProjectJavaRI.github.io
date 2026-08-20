@@ -24,13 +24,50 @@ export default defineConfig({
     logo: '/logo.png',
     siteTitle: false,
 
-    nav: [{ text: 'Overview', link: '/overview' }],
+    nav: [
+      { text: 'Overview', link: '/overview' },
+      { text: 'Getting Started', link: '/getting-started' }
+    ],
 
     // Hand-maintained: adding a page in a component repo's docs/ folder also
     // requires a sidebar entry here in the hub repo — the two live in
     // different repos, so this coupling can't be enforced automatically.
     sidebar: [
       { text: 'Overview', link: '/overview' },
+      { text: 'Getting Started', link: '/getting-started' },
+      {
+        text: 'BareMetal Assembly Project',
+        link: '/docs/direct-project-stock/',
+        collapsed: true,
+        items: [
+          {
+            text: 'Deployment Guide',
+            link: '/docs/direct-project-stock/dep-guide',
+            collapsed: true,
+            items: [
+              {
+                text: 'HISP Only Deployment (no source)',
+                link: '/docs/direct-project-stock/dep-hisp-only',
+                collapsed: true,
+                items: [
+                  { text: 'Legacy HISP Deployment Model', link: '/docs/direct-project-stock/legacy-deployment' },
+                  { text: 'Cloud Native HISP Deployment Model', link: '/docs/direct-project-stock/cloud-native-deployment' }
+                ]
+              }
+            ]
+          },
+          {
+            text: 'Deployment Options',
+            link: '/docs/direct-project-stock/imp-options',
+            collapsed: true,
+            items: [
+              { text: 'Configuration and Message Monitor Storage', link: '/docs/direct-project-stock/config-store' },
+              { text: 'Single Use Certificates', link: '/docs/direct-project-stock/single-use-certs' },
+              { text: 'Enhanced Private Key Security', link: '/docs/direct-project-stock/enhanced-key-security' }
+            ]
+          }
+        ]
+      },
       {
         text: 'Security And Trust Agent',
         link: '/docs/agent/',
@@ -162,39 +199,6 @@ export default defineConfig({
           { text: 'DNS Service Deployment', link: '/docs/dns/dep-guide' },
           { text: 'DNS Record Configuration', link: '/docs/dns/dns-rec-config' },
           { text: 'Integration With GoDaddy', link: '/docs/dns/godaddy' }
-        ]
-      },
-      {
-        text: 'BareMetal Assembly Project',
-        link: '/docs/direct-project-stock/',
-        collapsed: true,
-        items: [
-          {
-            text: 'Deployment Guide',
-            link: '/docs/direct-project-stock/dep-guide',
-            collapsed: true,
-            items: [
-              {
-                text: 'HISP Only Deployment (no source)',
-                link: '/docs/direct-project-stock/dep-hisp-only',
-                collapsed: true,
-                items: [
-                  { text: 'Legacy HISP Deployment Model', link: '/docs/direct-project-stock/legacy-deployment' },
-                  { text: 'Cloud Native HISP Deployment Model', link: '/docs/direct-project-stock/cloud-native-deployment' }
-                ]
-              }
-            ]
-          },
-          {
-            text: 'Deployment Options',
-            link: '/docs/direct-project-stock/imp-options',
-            collapsed: true,
-            items: [
-              { text: 'Configuration and Message Monitor Storage', link: '/docs/direct-project-stock/config-store' },
-              { text: 'Single Use Certificates', link: '/docs/direct-project-stock/single-use-certs' },
-              { text: 'Enhanced Private Key Security', link: '/docs/direct-project-stock/enhanced-key-security' }
-            ]
-          }
         ]
       }
     ],
