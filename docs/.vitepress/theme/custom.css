@@ -191,3 +191,38 @@
 .VPNavBarTitle .logo {
   border-radius: 4px;
 }
+
+/* ---------------------------------------------------------------------------
+   Wider content column on large screens.
+
+   VitePress caps the doc column at 688px and the whole layout at 1440px, which
+   leaves a lot of empty gutter on wide monitors — noticeable here because most
+   pages carry full-width screenshots. Two adjustments:
+
+   1. Raise --vp-layout-max-width above 1440px, stepped so the value never
+      exceeds the viewport. The theme computes VPContent/VPSidebar padding as
+      calc((100vw - var(--vp-layout-max-width)) / 2 + ...); if the variable is
+      larger than the viewport that term goes negative and the content slides
+      under the fixed sidebar.
+   2. Raise the doc column's own cap. The theme's rules are scoped
+      (.content-container[data-v-...]), so these selectors carry an extra class
+      to win on specificity rather than relying on stylesheet order.
+   --------------------------------------------------------------------------- */
+@media (min-width: 1600px) {
+  :root {
+    --vp-layout-max-width: 1600px;
+  }
+}
+
+@media (min-width: 1920px) {
+  :root {
+    --vp-layout-max-width: 1856px;
+  }
+}
+
+@media (min-width: 1280px) {
+  :root .VPDoc .content .content-container,
+  :root .VPDoc.has-aside .content .content-container {
+    max-width: 1008px;
+  }
+}
