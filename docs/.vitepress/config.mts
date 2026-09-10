@@ -51,7 +51,27 @@ export default defineConfig({
                 collapsed: true,
                 items: [
                   { text: 'Legacy HISP Deployment Model', link: '/docs/direct-project-stock/legacy-deployment' },
-                  { text: 'Cloud Native HISP Deployment Model', link: '/docs/direct-project-stock/cloud-native-deployment' }
+                  {
+                    text: 'Cloud Native HISP Deployment Model',
+                    link: '/docs/direct-project-stock/cloud-native-deployment',
+                    collapsed: true,
+                    items: [
+                      { text: 'Machine Deployment (Fat Jars)', link: '/docs/direct-project-stock/cloud-native-machine-deployment' },
+                      {
+                        text: 'Kubernetes Deployment',
+                        link: '/docs/direct-project-stock/cloud-native-kubernetes-deployment',
+                        collapsed: true,
+                        items: [
+                          { text: 'Production: RabbitMQ', link: '/docs/direct-project-stock/cloud-native-kubernetes-rabbitmq' },
+                          { text: 'Production: Secrets Management', link: '/docs/direct-project-stock/cloud-native-kubernetes-secrets' },
+                          { text: 'Production: Database', link: '/docs/direct-project-stock/cloud-native-kubernetes-database' },
+                          { text: 'Production: Ingress', link: '/docs/direct-project-stock/cloud-native-kubernetes-ingress' }
+                        ]
+                      },
+                      { text: 'Modify Service Default Configuration', link: '/docs/direct-project-stock/service-configuration' },
+                      { text: 'Configuration Manager Tool', link: '/docs/direct-project-stock/configuration-manager' }
+                    ]
+                  }
                 ]
               }
             ]
